@@ -1,0 +1,190 @@
+html, body, header{
+	height: 100%;
+	width: 100%;
+}
+@font-face {
+	  font-family: 'slick';
+	  src: url('../fonts/slick.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       /*url('webfont.woff2') format('woff2'), */
+	       url('../fonts/slick.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/slick.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/slick.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	  font-family: 'FontAwesome';
+	  src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('../fonts/fontawesome-webfont.woff2') format('woff2'), 
+	       url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/* global */
+.transpaarent{
+	background-color: transparent;
+}
+section{
+	padding: 60px 0;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.btn-light-brown{
+	background-color: #998677;
+	color: white;
+	border-bottom: 3px solid #726457;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 15px !important;
+	padding: 6px 22px;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 18px;
+	transition: .3s;
+}
+.btn-light-brown:hover{
+	background-color: #726457;
+}
+
+/* nav */
+.nav-link {
+    color: white;
+}
+.navbar-brand, .navbar-brand:hover {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.active a.nav-link, a.nav-link:hover{
+	color: #43291b;
+}
+.dark-header{
+	background-color: #7d675c;
+	transition: .3s;
+}
+
+
+
+/* slider */
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+.slick-next{
+	right: 25px;
+}
+.slick-track, .slick-list, .slick-dotted.slick-slider {
+    height: 100%;
+}
+.slick-dots {
+    bottom: 25px;
+}
+.slick-slide > div, .slide-phase {
+    height: 100%;
+}
+.slide-phase {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+.content-holder {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.content-here span {
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+}
+.content-here span p {
+    color: white;
+}
+.content-here h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
+.content-here {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+}
+.left-slider-arrow {
+    position: absolute;
+    z-index: 3;
+    font-size: 95px;
+    color: white;
+    left: 20px;
+    line-height: 55px;
+    top: 50%;
+    margin-top: -27px;
+}
+.right-slider-arrow {
+    position: absolute;
+    z-index: 3;
+    font-size: 95px;
+    color: white;
+    right: 20px;
+    line-height: 55px;
+    top: 50%;
+    margin-top: -27px;
+}
+.left-slider-arrow:hover, .right-slider-arrow:hover{
+	cursor: pointer;
+}
+
+/* service */
+#service-section a h3 {
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+    color: initial;
+}
+#service-section a i {
+    font-size: 3em;
+    color: #545454;
+    transition: .3s;
+}
+#service-section p{
+	color: gray;
+}
+#service-section hr {
+    height: 5px;
+    background-color: #f1eee9;
+    border: none;
+    transition: .3s;
+}
+#service-section a:hover, #service-section a:hover i, #service-section a:hover h3{
+	color: #c8b29a;
+	text-decoration: none;
+}
+#service-section .col-lg-3:hover hr{
+	background-color: #c8b29a;
+}
+
+#about-section .office-pic {
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.about-short-read{
+	background: #382720;
+	background: -moz-linear-gradient(left, #382720 0%, #483026 100%);
+	background: -webkit-linear-gradient(left, #382720 0%,#483026 100%);
+	background: linear-gradient(to right, #382720 0%,#483026 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382720', endColorstr='#483026',GradientType=1 );
+}
