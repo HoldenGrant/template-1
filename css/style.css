@@ -195,3 +195,12 @@ section{
  #about-section p{
  	color: gray;
  }
+
+
+ #project-section .card{
+ 	margin: 0;
+ 	border-radius: 0;
+ }
+  #project-section .card img{
+ 	border-radius: 0 !important;
+ }
