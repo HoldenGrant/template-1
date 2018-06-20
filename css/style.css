@@ -44,6 +44,7 @@ section{
 }
 .btn-light-brown:hover{
 	background-color: #726457;
+	color: white;
 }
 
 /* nav */
@@ -177,7 +178,7 @@ section{
 }
 
 #about-section .office-pic {
-    min-height: 500px;
+    min-height: 450px;
     background-position: center;
     background-size: cover;
 }
@@ -188,3 +189,9 @@ section{
 	background: linear-gradient(to right, #382720 0%,#483026 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382720', endColorstr='#483026',GradientType=1 );
 }
+#about-section h2{
+	color: white;
+}
+ #about-section p{
+ 	color: gray;
+ }
