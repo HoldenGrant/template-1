@@ -8,8 +8,8 @@ $(function(){
 	    fade: true,
 	    autoplay: true,
 	    cssEase: 'linear',
-	    nextArrow: '<i class="fa fa-angle-right right-slider-arrow" aria-hidden="true"></i>',
-	    prevArrow: '<i class="fa fa-angle-left left-slider-arrow" aria-hidden="true"></i>',
+	    nextArrow: '<img src="img/slider arrow.png" class="right-slider-arrow"/>',
+	    prevArrow: '<img src="img/slider arrow.png" class="left-slider-arrow"/>',
 
 	});	
 	$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -33,6 +33,20 @@ $(function(){
 	    }
 	});
 
+	
+
+	function counterUps(){
+		$('.countUpMe').each(function() {
+		    // no need to specify options unless they differ from the defaults
+		    var target = this;
+		    var endVal = parseInt($(this).attr('data-endVal'));
+		    theAnimation = new countUp(target, 0, endVal, 0, 3.5);
+		    // theAnimation = new countUp(target, 0, endVal, 1, 2.5);
+		    theAnimation.start();
+		});
+	}
+	
+
 	$('.left-slide').waypoint(function() {
 	  	$(this).addClass("animated fadeInLeft");
 	}, {
@@ -40,6 +54,12 @@ $(function(){
 	});
 	$('.right-slide').waypoint(function() {
 	  	$(this).addClass("animated fadeInRight");
+	}, {
+	  	offset: 300
+	});
+	$('.up-slide').waypoint(function() {
+	  	$(this).addClass("animated fadeInUp");
+	  	counterUps();
 	}, {
 	  	offset: 300
 	});

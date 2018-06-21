@@ -121,6 +121,13 @@ section{
     font-size: 60px;
     font-weight: 900;
 }
+.slider-content-left{
+    text-align: left;
+    padding-left: 140px;
+}
+.slider-content-left span{
+    margin:0;
+}
 .content-here {
     display: table-cell;
     vertical-align: middle;
@@ -146,6 +153,7 @@ section{
     line-height: 55px;
     top: 50%;
     margin-top: -27px;
+    transform: rotate(180deg);
 }
 .left-slider-arrow:hover, .right-slider-arrow:hover{
 	cursor: pointer;
@@ -207,7 +215,35 @@ section{
  	border-radius: 0 !important;
  }
 
+#video-section {
+    max-height: 500px;
+    height: 100%;
+    background-image: url(../img/vid_bg.jpg);
+}
+#video-section div {
 
+    height: 100%;
+
+}
+.play-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.inner-play {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner-play button {
+    border-radius: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,.5);
+    transition: .3s;
+}
+.inner-play button:hover{
+    transform: scale(1.3);
+}
+/* counter section */
 #serv-section {
     background: #211b19;
     background: -moz-linear-gradient(left, #211b19 0%, #4e3427 100%);
@@ -232,4 +268,17 @@ section{
     height: 5px;
     background-color: #c7b299;
     border: none;
+}
+
+
+
+#footer-top {
+
+    background-color: #191919;
+
+}
+#footer-bottom {
+
+    background-color: #111111;
+
 }
