@@ -30,6 +30,8 @@ section{
 .no-padding{
 	padding: 0 !important;
 }
+.opacity-0{ opacity: 0; }
+.opacity-0.animate{ opacity: 1; }
 .btn-light-brown{
 	background-color: #998677;
 	color: white;
@@ -204,3 +206,30 @@ section{
   #project-section .card img{
  	border-radius: 0 !important;
  }
+
+
+#serv-section {
+    background: #211b19;
+    background: -moz-linear-gradient(left, #211b19 0%, #4e3427 100%);
+    background: -webkit-linear-gradient(left, #211b19 0%,#4e3427 100%);
+    background: linear-gradient(to right, #211b19 0%,#4e3427 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4e3427',GradientType=1 );
+}
+.countUpMe{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+.icon-name{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    color: white;
+    text-transform: uppercase;
+}
+#serv-section hr{
+    height: 5px;
+    background-color: #c7b299;
+    border: none;
+}
