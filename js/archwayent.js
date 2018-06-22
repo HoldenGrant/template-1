@@ -60,9 +60,15 @@ $(function(){
 	$('.up-slide').waypoint(function() {
 	  	$(this).addClass("animated fadeInUp");
 	  	counterUps();
+	  	return false;
 	}, {
 	  	offset: 300
 	});
+
+	// .parallax-window {
+	//     min-height: 400px;
+	//     background: transparent;
+	// }
 })
 
 
