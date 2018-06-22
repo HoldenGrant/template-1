@@ -25,10 +25,10 @@ body{
 	 font-family: 'Montserrat', sans-serif;
 }
 .transpaarent{
-	background-color: transparent;
+	background-color: rgba(251, 251, 251, 0.25);
 }
 section{
-	padding: 60px 0;background: white;
+	padding: 60px 0;
 }
 .no-padding{
 	padding: 0 !important;
@@ -41,11 +41,27 @@ section{
 	border-bottom: 3px solid #013040;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 17px !important;
+	font-size: 18px !important;
 	padding: 6px 22px;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 18px;
 	transition: .3s;
+}
+.btn-light-orange{
+	background-color: #fdaa42;
+	color: white;
+	border-bottom: 3px solid #e85c0f;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 18px !important;
+	padding: 6px 22px;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 18px;
+	transition: .3s;
+}
+.btn-light-orange:hover{
+	background-color: #e7824b;
+	color: white;
 }
 .btn-light-brown:hover{
 	background-color: #0b3948;
@@ -61,7 +77,9 @@ section{
 	width: 0; height: 0; border-left: 15px solid #f2232300; border-right: 15px solid #0000; border-bottom: 15px solid white; position: absolute; bottom: 0; left: 20px; transition: .3s;
 }
 .card-deck {width: 100%;}
-
+.modal-lg {
+    max-width: 80%;
+}
 /* nav */
 nav{
     transition: .5s;
@@ -78,8 +96,11 @@ nav{
 .active a.nav-link, a.nav-link:hover{
 	color: #013040;
 }
+nav.dark-header .active a.nav-link, a.nav-link:hover {
+    color: #e85c0f;
+}
 .dark-header{
-	background-color: #fac9a1;
+	background-color: #013040;
 	transition: .3s;
     padding-top: 10px !important;
 }
@@ -173,11 +194,12 @@ nav{
     min-height: 450px; background-position: center; background-size: cover;
 }
 .about-short-read{
-	background: #382720;
+	/* background: #382720;
 	background: -moz-linear-gradient(left, #382720 0%, #483026 100%);
 	background: -webkit-linear-gradient(left, #382720 0%,#483026 100%);
 	background: linear-gradient(to right, #382720 0%,#483026 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382720', endColorstr='#483026',GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#382720', endColorstr='#483026',GradientType=1 ); */
+	background-color: #013040;
 }
 #about-section h2{
 	color: white;
@@ -201,7 +223,7 @@ nav{
 	overflow: hidden; min-height: 240px; height: 100%; background-size: cover; background-position: center; position: relative; text-align: center;
 }
 #project-section .img-holder .view-opt {
-    position: absolute; top: -100%; transition: .5s; height: 240px; width: 100%; background-color: rgba(77, 52, 39, 0.60); overflow: hidden;display: table;
+    position: absolute; top: -100%; transition: .5s; height: 240px; width: 100%; background-color: rgba(232, 92, 15, 0.36); overflow: hidden;display: table;
 }
 #project-section .card:hover .img-holder .view-opt{
    top: 0; width: 100%; transition: .3s;
@@ -217,20 +239,20 @@ nav{
     font-size: 30px;
 }
 #project-section .card .img-holder .view-opt ul li:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(74, 176, 242, 0.58);
     transform: scale(1.2);
 }
 #project-section .card:hover .arrow-up{
-	border-bottom: 15px solid #372f2d;
+	border-bottom: 15px solid #013040;
 }
 #project-section .card:hover .card-body{
-	background-color: #372f2d;
+	background-color: #013040;
 	color: white;
 }
 
 
 /* video section */
-#video-section { max-height: 500px; height: 100%; overflow: hidden; position: relative; background: rgba(0,0,0,.5); }
+#video-section { max-height: 500px; height: 100%; overflow: hidden; position: relative; background: rgba(232, 92, 15, 0.07); }
 #video-section div {height: 100%;}
 .play-container { display: table; text-align: center; width: 100%;}
 .inner-play { display: table-cell; vertical-align: middle; }
@@ -269,7 +291,7 @@ z-index: 2;
     position: absolute;
     height: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(232, 92, 15, 0.36);
     z-index: 1;
 	 transition: .3s;
 }
@@ -277,7 +299,7 @@ z-index: 2;
 	height: 100%;
 }
 #post-section .card:hover .card-body{
-	background-color: #372f2d;
+	background-color: #013040;
 }
 #post-section .card:hover .card-body a{
 	color: #bcab97;
@@ -286,6 +308,15 @@ z-index: 2;
 	color: #555555;
 	text-decoration: none;
 }
+#post-section .card .card-body > a{
+	font-size: 12px;
+	text-decoration: none;
+}
+#post-section .card:hover .card-body .card-title a{
+	color: #fac9a1;
+	text-decoration: none;
+}
+
 #post-section .card:hover .card-body p{
 	color: #ffffff;
 }
@@ -297,11 +328,17 @@ z-index: 2;
 
 /* counter section */
 #serv-section {
-    background: #211b19;
+    /* background: #211b19;
     background: -moz-linear-gradient(left, #211b19 0%, #4e3427 100%);
     background: -webkit-linear-gradient(left, #211b19 0%,#4e3427 100%);
     background: linear-gradient(to right, #211b19 0%,#4e3427 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4e3427',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4e3427',GradientType=1 ); */
+
+	 background: rgb(232,92,15);
+background: -moz-linear-gradient(left, rgba(232,92,15,1) 1%, rgba(1,48,64,1) 100%);
+background: -webkit-linear-gradient(left, rgba(232,92,15,1) 1%,rgba(1,48,64,1) 100%);
+background: linear-gradient(to right, rgba(232,92,15,1) 1%,rgba(1,48,64,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e85c0f', endColorstr='#013040',GradientType=1 );
 }
 .countUpMe{
     font-family: 'Raleway', sans-serif;
@@ -325,13 +362,17 @@ z-index: 2;
 
 /* footer section */
 #footer-top {
-    background-color: #191919;
+    /* background-color: #191919; */
 }
-.comp-about p {
+/* .comp-about p {
     color: rgba(255, 255, 255, 0.54);
-}
+} */
 .comp-about a.read-more {
-    color: rgba(255, 255, 255, 0.8);
+    color: #212529;
+	 font-size: 15px;
+}
+.comp-about a.read-more:hover {
+	text-decoration: none;
 }
 .comp-info {
     position: relative;
@@ -339,11 +380,18 @@ z-index: 2;
 .comp-info p {
     margin: 0;
     line-height: 22px;
-    color: rgba(255, 255, 255, 0.54);
+    color: #212529;
 }
 .comp-info a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #212529;
 }
+.comp-about a.navbar-brand  {
+    color: #013040;
+}
+.comp-about p{
+	color: #212529;
+}
+
 ul.social-media {
     text-align: right;
 	 padding: 0;
@@ -357,7 +405,7 @@ ul.social-media li {
 	 width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: 1px solid white;
+    border: 1px solid #212529;
     margin-right: 10px;
     margin-top: 10px;
 }

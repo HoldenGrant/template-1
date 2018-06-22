@@ -6,7 +6,7 @@ $(function(){
 	    infinite: true,
 	    speed: 500,
 	    fade: true,
-	    autoplay: true,
+	    autoplay: false,
 	    cssEase: 'linear',
 	    nextArrow: '<img src="img/slider arrow.png" class="right-slider-arrow"/>',
 	    prevArrow: '<img src="img/slider arrow.png" class="left-slider-arrow"/>',
@@ -64,4 +64,6 @@ $(function(){
 	}, {
 	  	offset: 300
 	});
+
+	$("#myModal").modal()
 })
