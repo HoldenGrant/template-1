@@ -15,7 +15,7 @@ html, body, header{
 	  font-family: 'FontAwesome';
 	  src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
 	  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	       url('../fonts/fontawesome-webfont.woff2') format('woff2'), 
+	       url('../fonts/fontawesome-webfont.woff2') format('woff2'),
 	       url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
 	       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 	       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -47,6 +47,12 @@ section{
 .btn-light-brown:hover{
 	background-color: #726457;
 	color: white;
+}
+.parallax-mirror {
+    top: 18px !important;
+}
+.arrow-up {
+	width: 0; height: 0; border-left: 15px solid #f2232300; border-right: 15px solid #0000; border-bottom: 15px solid white; position: absolute; bottom: 0; left: 20px;
 }
 
 /* nav */
@@ -95,35 +101,22 @@ nav{
     height: 100%;
 }
 .slide-phase {
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background-position: center; background-size: cover; position: relative;
 }
 .img-bg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.34);
+    height: 100%; width: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.34);
 }
 .content-holder {
-    display: table;
-    height: 100%;
-    width: 100%;
-    text-align: center;
+    display: table; height: 100%; width: 100%; text-align: center;
 }
 .content-here span {
-    max-width: 650px;
-    display: block;
-    margin: 0 auto;
+    max-width: 650px; display: block; margin: 0 auto;
 }
 .content-here span p {
     color: white;
 }
 .content-here h1 {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 60px;
-    font-weight: 900;
+    font-family: 'Roboto', sans-serif; color: white; font-size: 60px; font-weight: 900;
 }
 .slider-content-left{
     text-align: left;
@@ -133,31 +126,13 @@ nav{
     margin:0;
 }
 .content-here {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    z-index: 2;
+   display: table-cell; vertical-align: middle; position: relative; z-index: 2;
 }
 .left-slider-arrow {
-    position: absolute;
-    z-index: 3;
-    font-size: 95px;
-    color: white;
-    left: 20px;
-    line-height: 55px;
-    top: 50%;
-    margin-top: -27px;
+   position: absolute; z-index: 3; font-size: 95px; color: white; left: 20px; line-height: 55px; top: 50%; margin-top: -27px;
 }
 .right-slider-arrow {
-    position: absolute;
-    z-index: 3;
-    font-size: 95px;
-    color: white;
-    right: 20px;
-    line-height: 55px;
-    top: 50%;
-    margin-top: -27px;
-    transform: rotate(180deg);
+   position: absolute; z-index: 3; font-size: 95px; color: white; right: 20px; line-height: 55px; top: 50%; margin-top: -27px; transform: rotate(180deg);
 }
 .left-slider-arrow:hover, .right-slider-arrow:hover{
 	cursor: pointer;
@@ -165,9 +140,7 @@ nav{
 
 /* service */
 #service-section a h3 {
-    font-family: 'Raleway', sans-serif;
-    transition: .3s;
-    color: initial;
+    font-family: 'Raleway', sans-serif; transition: .3s; color: initial;
 }
 #service-section a i {
     font-size: 3em;
@@ -178,10 +151,7 @@ nav{
 	color: gray;
 }
 #service-section hr {
-    height: 5px;
-    background-color: #f1eee9;
-    border: none;
-    transition: .3s;
+    height: 5px; background-color: #f1eee9; border: none; transition: .3s;
 }
 #service-section a:hover, #service-section a:hover i, #service-section a:hover h3{
 	color: #c8b29a;
@@ -193,9 +163,7 @@ nav{
 
 /* about section */
 #about-section .office-pic {
-    min-height: 450px;
-    background-position: center;
-    background-size: cover;
+    min-height: 450px; background-position: center; background-size: cover;
 }
 .about-short-read{
 	background: #382720;
@@ -220,30 +188,34 @@ nav{
 	border-radius: 0 !important;
 }
 #project-section .img-holder {
-    overflow: hidden;
-    min-height: 240px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    overflow: hidden; min-height: 240px; background-size: cover; background-position: center; position: relative; text-align: center;
 }
 #project-section .img-holder .view-opt {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     transition: .5s;
     height: 0;
     width: 100%;
     background-color: rgba(77, 52, 39, 0.60);
+	 overflow: hidden;display: table;bottom: 100%;
 }
 #project-section .card:hover .img-holder .view-opt{
-    height: 100%;
-    width: 100%;
-    transition: .3s;
+   height: 100%; width: 100%; transition: .3s;bottom: 0;
 }
-/*#project-section .img-holder img {
-    height: 100%;
+#project-section .card .img-holder .view-opt ul {
+   padding: 0; list-style: none; display: table-cell;vertical-align: middle;
+}
+#project-section .card .img-holder .view-opt ul li {
+   display: inline-block; padding: 0 10px; width: 50px; height: 50px; border-radius: 100%; transition: .3s;
+}
+#project-section .card .img-holder .view-opt ul li a {
+    color: #ffffff;
+    font-size: 30px;
+}
+#project-section .card .img-holder .view-opt ul li:hover {
+    background-color: rgba(0,0,0,.5);
     transform: scale(1.2);
-    transform-origin: center;
-}*/
+}
 
 /* video section */
 #video-section {
