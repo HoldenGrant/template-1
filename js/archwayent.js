@@ -11,11 +11,11 @@ $(function(){
 	    nextArrow: '<img src="img/slider arrow.png" class="right-slider-arrow"/>',
 	    prevArrow: '<img src="img/slider arrow.png" class="left-slider-arrow"/>',
 
-	});	
+	});
 	$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.slick-current.slick-active .content-here h1').removeClass('animated fadeInLeft');
-		$('.slick-current.slick-active .content-here span').removeClass('animated fadeInRight');  
-		$('.slick-current.slick-active .content-here button').removeClass('animated fadeInUp');        
+		$('.slick-current.slick-active .content-here span').removeClass('animated fadeInRight');
+		$('.slick-current.slick-active .content-here button').removeClass('animated fadeInUp');
 	});
 	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 		$('.slick-current.slick-active .content-here h1').addClass('animated fadeInLeft');
@@ -23,7 +23,7 @@ $(function(){
 		$('.slick-current.slick-active .content-here button').addClass('animated fadeInUp');
 	});
 
-	$(window).scroll(function() {    
+	$(window).scroll(function() {
 	    var scroll = $(window).scrollTop();
 
 	    if (scroll >= 200) {
@@ -33,7 +33,7 @@ $(function(){
 	    }
 	});
 
-	
+
 
 	function counterUps(){
 		$('.countUpMe').each(function() {
@@ -45,7 +45,7 @@ $(function(){
 		    theAnimation.start();
 		});
 	}
-	
+
 
 	$('.left-slide').waypoint(function() {
 	  	$(this).addClass("animated fadeInLeft");
@@ -65,8 +65,3 @@ $(function(){
 	  	offset: 300
 	});
 })
-
-
-	
-
-	
