@@ -36,19 +36,19 @@ section{
 .opacity-0{ opacity: 0; }
 .opacity-0.animate{ opacity: 1; }
 .btn-light-brown{
-	background-color: #4ab0f2;
+	background-color: #998677;
 	color: white;
-	border-bottom: 3px solid #013040;
+	border-bottom: 3px solid #726457;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 17px !important;
+	font-size: 15px !important;
 	padding: 6px 22px;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 18px;
 	transition: .3s;
 }
 .btn-light-brown:hover{
-	background-color: #0b3948;
+	background-color: #726457;
 	color: white;
 }
 /* firefox only */
@@ -67,7 +67,7 @@ nav{
     transition: .5s;
 }
 .nav-link {
-    color: white;font-weight: 500;
+    color: white;
 }
 .navbar-brand, .navbar-brand:hover {
     color: white;
@@ -76,10 +76,10 @@ nav{
     font-size: 30px;
 }
 .active a.nav-link, a.nav-link:hover{
-	color: #013040;
+	color: #43291b;
 }
 .dark-header{
-	background-color: #fac9a1;
+	background-color: #7d675c;
 	transition: .3s;
     padding-top: 10px !important;
 }
@@ -111,7 +111,7 @@ nav{
     background-position: center; background-size: cover; position: relative;
 }
 .img-bg {
-    height: 100%; width: 100%; position: absolute; background-color: rgba(232, 92, 15, 0.18);
+    height: 100%; width: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.34);
 }
 .content-holder {
     display: table; height: 100%; width: 100%; text-align: center;
@@ -161,11 +161,11 @@ nav{
     height: 5px; background-color: #f1eee9; border: none; transition: .3s;
 }
 #service-section a:hover, #service-section a:hover i, #service-section a:hover h3{
-	color: #4ab0f2;
+	color: #c8b29a;
 	text-decoration: none;
 }
 #service-section .col-lg-3:hover hr{
-	background-color: #4ab0f2;
+	background-color: #c8b29a;
 }
 
 /* about section */
