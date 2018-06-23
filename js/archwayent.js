@@ -73,8 +73,8 @@ $(function(){
 		// $('iframe#comp-vid').each(function() {
 		//       this.player.pause();
 		//     });
-    $('#comp-vid').stopVideo();
+    //$('#comp-vid').stopVideo();
 	 //alert("etst");
-		//$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+		$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	});
 });
