@@ -70,10 +70,10 @@ $(function(){
     });
 
 	$('#pause-vid').on('click', function() {
-		$('iframe#comp-vid').each(function() {
-		      this.player.pause();
-		    });
-    //$('#popup-youtube-player').stopVideo();
+		// $('iframe#comp-vid').each(function() {
+		//       this.player.pause();
+		//     });
+    $('#comp-vid').stopVideo();
 	 //alert("etst");
 		//$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	});
