@@ -65,5 +65,13 @@ $(function(){
 	  	offset: 300
 	});
 
-	$("#myModal").modal()
-})
+	$('#myModal').bind('show', function () {
+        //do stuf on show
+    });
+
+	$('#pause-vid').on('click', function() {
+    //$('#popup-youtube-player').stopVideo();
+	 //alert("etst");
+		$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	});
+});
