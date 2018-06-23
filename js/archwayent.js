@@ -69,39 +69,12 @@ $(function(){
         //do stuf on show
     });
 
-	// $('#pause-vid').on('click', function() {
-   //  //$('#popup-youtube-player').stopVideo();
-	//  //alert("etst");
-	// 	$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	// });
-
-	$(function(){
-
-				var yt_int, yt_players={},
-				    initYT = function() {
-				        $(".ytplayer").each(function() {
-				            yt_players[this.id] = new YT.Player(this.id);
-				        });
-				    };
-
-				$.getScript("//www.youtube.com/player_api", function() {
-				    yt_int = setInterval(function(){
-				        if(typeof YT === "object"){
-				            initYT();
-				            clearInterval(yt_int);
-				        }
-				    },500);
-				});
-
-				$('#play').on('click', function(){
-					yt_players['comp-vid'].playVideo();
-				});
-
-				$('#pause-vid').on('click', function(){
-					yt_players['comp-vid'].pauseVideo();
-				});
-
-
-
-			});
+	$('#pause-vid').on('click', function() {
+		$('iframe#comp-vid').each(function() {
+		      this.player.pause();
+		    });
+    //$('#popup-youtube-player').stopVideo();
+	 //alert("etst");
+		//$('iframe#comp-vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+	});
 });
